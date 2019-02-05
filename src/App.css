@@ -2,31 +2,39 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.playfield {
+  background-color: silver;
+  height: 60vh;
+  margin-top: 10vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.platform {
+  position: absolute;
+  left: 0px;
+  bottom: -3px;
+  border-bottom: 4px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+.platform_wrapper {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.jumper {
+  position: absolute;
+  bottom: 0px;
+}
+
+.game-over {
+  text-align: center;
+  font-size: 2em;
 }
